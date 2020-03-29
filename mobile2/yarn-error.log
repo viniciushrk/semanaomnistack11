@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin:/snap/bin:/opt/node/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/usr/lib/jvm/java-8-openjdk-amd64bin/:/home/viniciushrk/Android/Sdk/tools/:/home/viniciushrk/Android/Sdk/tools/bin/:/home/viniciushrk/Android/Sdk/platform-tools/:/home/viniciushrk/Android/Sdk/emulator/
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.npmjs.org/expo: error:0909006C:PEM routines:get_name:no start line
+      at Object.createSecureContext (_tls_common.js:149:17)
+      at Object.connect (_tls_wrap.js:1559:48)
+      at Agent.createConnection (https.js:130:22)
+      at Agent.createSocket (_http_agent.js:265:26)
+      at Agent.addRequest (_http_agent.js:224:10)
+      at new ClientRequest (_http_client.js:296:16)
+      at Object.request (https.js:314:10)
+      at Request.module.exports.Request.start (/usr/share/yarn/lib/cli.js:141310:32)
+      at Request.module.exports.Request.end (/usr/share/yarn/lib/cli.js:142069:10)
+      at end (/usr/share/yarn/lib/cli.js:141123:14)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~36.0.0",
+      "react": "~16.9.0",
+      "react-dom": "~16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+      "react-native-web": "~0.11.7"
+    },
+    "devDependencies": {
+      "babel-preset-expo": "~8.0.0",
+      "@babel/core": "^7.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

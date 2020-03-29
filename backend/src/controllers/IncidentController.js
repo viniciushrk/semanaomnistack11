@@ -14,7 +14,7 @@ module.exports = {
             .select(['incidents.*','ongs.name',
                 'ongs.email','ongs.city','ongs.uf']);
 
-        response.header('X-Tortal-Count',count['count(*)']);
+        response.header('X-Total-Count',count['count(*)']);
         return response.json(incidents);
     },
 
